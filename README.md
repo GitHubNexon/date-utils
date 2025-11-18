@@ -25,7 +25,7 @@ npm install dayjs
 ### Using Moment.js
 
 ```typescript
-import { momentjs } from '@your-username/date-utils';
+import { momentjs } from '@syntaxsentinel/date-utils';
 
 const now = new Date();
 
@@ -44,7 +44,7 @@ const startOfMonth = momentjs.dateUtils.startOf(now, 'month');
 ### Using Day.js
 
 ```typescript
-import { dayjs } from '@your-username/date-utils';
+import { dayjs } from '@syntaxsentinel/date-utils';
 
 const now = new Date();
 
@@ -100,7 +100,7 @@ Both `momentjs.dateUtils` and `dayjs.dateUtils` provide:
 ### Formatting Dates
 
 ```typescript
-import { momentjs, dayjs } from '@your-username/date-utils';
+import { momentjs, dayjs } from '@syntaxsentinel/date-utils';
 
 const date = new Date('2025-09-26T10:45:30');
 
@@ -118,7 +118,7 @@ console.log(dayjs.formatDate.custom(date, 'DD/MM/YYYY')); // "26/09/2025"
 ### Date Manipulation
 
 ```typescript
-import { momentjs } from '@your-username/date-utils';
+import { momentjs } from '@syntaxsentinel/date-utils';
 
 const now = new Date();
 
@@ -146,8 +146,8 @@ Import only what you need for optimal bundle size:
 
 ```typescript
 // Import specific implementation
-import { momentFormatDate, momentDateUtils } from '@your-username/date-utils';
-import { dayjsFormatDate, dayjsDateUtils } from '@your-username/date-utils';
+import { momentFormatDate, momentDateUtils } from '@syntaxsentinel/date-utils';
+import { dayjsFormatDate, dayjsDateUtils } from '@syntaxsentinel/date-utils';
 
 // Use directly
 console.log(momentFormatDate.shortDate(new Date()));
